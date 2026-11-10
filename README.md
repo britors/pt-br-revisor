@@ -1,3 +1,7 @@
+<p align="center">
+  <img src=".claude-plugin/icon.svg" alt="Ícone do pt-br-revisor: a letra ã com um sinal de certo" width="128">
+</p>
+
 # pt-br-revisor
 
 [Português](#português) · [English](#english)
@@ -37,9 +41,11 @@ Em versões anteriores:
 
 Precisa de `python3` no PATH.
 
-### Revisar um arquivo inteiro
+### Uso
 
-Peça ao Claude: "revise o português do README.md". A skill roda a revisão automática, confere cada ponto no contexto, corrige os claros e lista os duvidosos.
+O hook roda sozinho sempre que o Claude escreve ou edita um `.md` e aponta os problemas do trecho novo, com a linha e a sugestão.
+
+Para revisar um arquivo inteiro, peça ao Claude: "revise o português do README.md". A skill roda a revisão automática, confere cada ponto no contexto, corrige os claros e lista os duvidosos.
 
 Também dá para rodar direto:
 
@@ -88,7 +94,15 @@ Para rodar os testes: `python3 -m unittest discover -s tests`.
 - A per-project term list lives in `.claude/pt-br-revisor.json` (preferred terms, extra anglicisms, allowed words, ignored files, rules on/off).
 - The `pt-br-revisor` skill reviews a whole file; `revisor.py revisar FILE.md` runs the automatic checks.
 
-Install with `/plugin install pt-br-revisor --marketplace britors/pt-br-revisor`.
+Install:
+
+```
+/plugin install pt-br-revisor --marketplace britors/pt-br-revisor
+```
+
+On older versions, run `/plugin marketplace add britors/pt-br-revisor` and then `/plugin install pt-br-revisor@pt-br-revisor`.
+
+Usage: the hook runs on its own whenever Claude writes or edits a `.md` file. To review a whole file, ask "revise o português do README.md" or run `python3 skills/pt-br-revisor/scripts/revisor.py revisar FILE.md`.
 
 ## Licença / License
 
