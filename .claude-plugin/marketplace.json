@@ -1,0 +1,16 @@
+{
+  "name": "pt-br-revisor",
+  "owner": {
+    "name": "Rodrigo Brito"
+  },
+  "metadata": {
+    "description": "Plugin que revisa o português dos arquivos Markdown."
+  },
+  "plugins": [
+    {
+      "name": "pt-br-revisor",
+      "source": "./",
+      "description": "Revisa o português dos arquivos Markdown: anglicismos desnecessários, datas, números e moeda no formato americano, palavras sem acento e termos inconsistentes, com lista de termos por projeto."
+    }
+  ]
+}

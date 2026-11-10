@@ -1,0 +1,13 @@
+{
+  "name": "pt-br-revisor",
+  "displayName": "Revisor pt-BR",
+  "version": "1.0.0",
+  "description": "Revisa o português dos arquivos Markdown: anglicismos desnecessários, datas, números e moeda no formato americano, palavras sem acento e termos inconsistentes, com lista de termos por projeto.",
+  "author": {
+    "name": "Rodrigo Brito"
+  },
+  "homepage": "https://github.com/britors/pt-br-revisor",
+  "repository": "https://github.com/britors/pt-br-revisor",
+  "license": "GPL-3.0-only",
+  "keywords": ["português", "pt-br", "revisão", "markdown", "hooks"]
+}

@@ -1,0 +1,13 @@
+{
+  "description": "Revisa o português dos arquivos .md escritos ou editados. Fica em silêncio quando não há o que apontar.",
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {"type": "command", "command": "python3 \"${CLAUDE_PLUGIN_ROOT}/skills/pt-br-revisor/scripts/revisor.py\" hook", "timeout": 5}
+        ]
+      }
+    ]
+  }
+}
